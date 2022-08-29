@@ -1,12 +1,12 @@
 import React from "react";
 import { OnlineEnglishBanner } from "../../components/banners";
-import { BoxCards } from "../../components/box-cards"
+import { TeacherCardBox } from "../../components/box-cards/teachers";
 
 export const HomePage = () => {
   return (
     <div>
       <OnlineEnglishBanner />
-      <BoxCards />
+      <TeacherCardBox />
     </div>
   );
 };

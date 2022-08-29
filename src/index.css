@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  :root {
+    --color-primary-opacity: rgb(255 115 179);
+    /* ... */
+  }
+}
+
 blockquote,
 dl,
 dd,

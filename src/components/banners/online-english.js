@@ -12,10 +12,11 @@ export const OnlineEnglishBanner = () => {
           bg-primary01 
 
           w-screen 
+          overflow-hidden
         "
       >
         <div 
-        className="
+          className="
             mx-auto 
             
             max-w-2xl 
