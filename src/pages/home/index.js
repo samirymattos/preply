@@ -4,7 +4,7 @@ import { TeacherCardBox } from "../../components/box-cards/teachers";
 
 export const HomePage = () => {
   return (
-    <div>
+    <div className="w-full max-w-screen overflow-hidden">
       <OnlineEnglishBanner />
       <TeacherCardBox />
     </div>

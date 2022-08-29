@@ -74,12 +74,7 @@ export const OnlineEnglishBanner = () => {
               items-end
             "
           >
-            <img 
-              src={ManInEnglishBannerOnline} 
-              className="
-                h-fit
-              "
-            />
+            <img src={ManInEnglishBannerOnline} className="h-fit" />
           </div>
         </div>
       </div>
