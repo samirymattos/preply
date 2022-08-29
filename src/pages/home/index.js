@@ -1,11 +1,12 @@
 import React from "react";
+import { OnlineEnglishBanner } from "../../components/banners";
+import { BoxCards } from "../../components/box-cards"
 
 export const HomePage = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world! 2
-      </h1>
+      <OnlineEnglishBanner />
+      <BoxCards />
     </div>
   );
 };
