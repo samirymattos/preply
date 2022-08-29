@@ -9,7 +9,7 @@ export const TeacherCard = ({teacher}) => {
     <div className="z-10 font-montserrat">
       <div 
         className="relative rounded-t-3xl bg-local bg-origin-padding bg-no-repeat bg-center bg-cover backdrop-brightness-50"
-          style={{backgroundImage: `url(${teacher.background_image})`}}
+        style={{backgroundImage: `url(${teacher.background_image})`}}
       >
 
         <div className="py-8 px-6 h-[220px] overflow-hidden">

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { TeacherCard } from "../cards";
 import {
-  ManInEnglishBannerOnline,
   AvatarGuy,
   AvatarLorenzo,
   AvatarLuca,
@@ -15,6 +14,7 @@ import {
   BackgroundMarvin,
   BackgroundPaolo
 } from "../../assets";
+import * as button from "../buttons";
 
 
 export const TeacherCardBox = (props) => {
@@ -183,8 +183,8 @@ export const TeacherCardBox = (props) => {
           sm:max-w-full 
 
           grid
+          gap-5
           grid-cols-3
-          gap-3
           md:grid-cols-2
           sm:grid-cols-1
         "
@@ -196,32 +196,8 @@ export const TeacherCardBox = (props) => {
       </div>
 
       {next < teachers?.length && (
-        <div
-          className="
-            flex
-            justify-center
-            w-full
-            max-w-full
-            mx-auto
-            pt-20
-          "
-        >
-          <button
-            className="
-              min-w-[400px]
-              max-w-full
-              sm:min-w-full
-              py-3
-              bg-tertiary01-opacity       
-              text-tertiary01
-              font-bold
-              border
-              rounded-lg
-            "
-            onClick={handleMoreImage}
-          >
-            Load more
-          </button>
+        <div className="flex justify-center w-full max-w-full mx-auto pt-20">
+          <button.LoadMoreButton onClick={handleMoreImage}/>
         </div>
       )}
     </div>
