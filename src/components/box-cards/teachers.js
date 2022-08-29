@@ -162,7 +162,8 @@ export const TeacherCardBox = (props) => {
 
   return (
     <div 
-      className="
+      className="]
+        relative
         px-2 
         mt-20
         pb-20
@@ -196,8 +197,10 @@ export const TeacherCardBox = (props) => {
       </div>
 
       {next < teachers?.length && (
-        <div className="flex justify-center w-full max-w-full mx-auto pt-20">
-          <button.LoadMoreButton onClick={handleMoreImage}/>
+        <div className="h-[130px]">
+          <div className="flex justify-center w-full max-w-full mx-auto pt-20 shadow-load-more mb-20 absolute bottom-0 left-0 z-20">
+            <button.LoadMoreButton onClick={handleMoreImage}/>
+          </div>
         </div>
       )}
     </div>

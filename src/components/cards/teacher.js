@@ -8,23 +8,44 @@ export const TeacherCard = ({teacher}) => {
   return (
     <div className="z-10 font-montserrat">
       <div 
-        className="relative rounded-t-3xl bg-local bg-origin-padding bg-no-repeat bg-center bg-cover backdrop-brightness-50"
+        className="
+          h-[370px]
+          relative 
+          rounded-t-3xl
+
+          bg-local 
+          bg-origin-padding 
+          bg-no-repeat 
+          bg-center 
+          bg-cover 
+
+          flex
+          flex-col
+          justify-between
+        "
         style={{backgroundImage: `url(${teacher.background_image})`}}
       >
-
-        <div className="py-8 px-6 h-[220px] overflow-hidden">
-          <typographies.Status>
-            {teacher.status} 
-          </typographies.Status>
+        <div 
+          className="
+            backdrop-brightness-80
+            h-full
+            rounded-t-3xl
+          "
+        >
+          <div className="py-8 px-6 overflow-hidden">
+            <typographies.Status>
+              {teacher.status} 
+            </typographies.Status>
+          </div>
         </div>
 
         <div
           className="
             relative
             z-20
-            overflow-hidden
             bg-white-opacity
-            backdrop-blur-10
+            backdrop-blur
+            backdrop-contrast-50
 
             py-4
             px-6 

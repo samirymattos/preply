@@ -60,8 +60,12 @@ module.exports = {
     dropShadow: {
       'black': '0px -400px 23px 0px rgba(0,0,0,1)',
     },
-    backdropBlur: {
-      '10': '10px',
+    boxShadow: {
+      'load-more': '0 -40px 126px 134px rgba(250, 250, 250, 0.5)',
+    },
+    backdropBrightness: {
+      '25': '.25',
+      '80': '.80',
     },
     extend: {
       lineHeight: {
