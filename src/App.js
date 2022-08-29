@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./AppRouter";
+
+import { store, persistor} from "./redux/store";
+import { PersistGate } from 'redux-persist/integration/react';
+import { Provider } from "react-redux";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <BrowserRouter>
+      <PersistGate loading={null} persistor={persistor}>
+        <AppRouter />
+      </PersistGate>
+    </BrowserRouter>
   )
 }
 
