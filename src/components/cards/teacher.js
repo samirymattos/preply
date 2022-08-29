@@ -6,7 +6,7 @@ import * as button from "../buttons";
 
 export const TeacherCard = ({teacher}) => {
   return (
-    <div className="z-10 font-montserrat">
+    <div className="z-10">
       <div 
         className="
           h-[370px]
@@ -104,7 +104,7 @@ export const TeacherCard = ({teacher}) => {
           rounded-b-3xl
         "
       >
-        <button.PrimaryButton>
+        <button.PrimaryButton disabled>
           Trail lesson
         </button.PrimaryButton>
       </div>

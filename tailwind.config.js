@@ -24,6 +24,7 @@ module.exports = {
       'tertiary01': '#D94092',
 
       'neutrals01': '#EAEAEA',
+      'neutrals02': '#99A3AE',
       'neutrals03': '#FFFFFF',
 
       'background': '#F9FCFC',
@@ -38,6 +39,7 @@ module.exports = {
     },
     fontFamily: {
       'montserrat': 'Montserrat',
+      'lato': 'Lato',
     },
     fontSize: {
       'min-caption': '10px',
