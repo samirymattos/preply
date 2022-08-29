@@ -28,7 +28,7 @@ export const BoxCards = (props) => {
       price: "5,00",
       status: "Online",
       avatar: {AvatarLuca},
-      background_photo: {BackgroundLuca}
+      background_image: "../../assets/images/background_luca.svg"
     },
     {
       name: "Martina Wilson",
@@ -38,7 +38,7 @@ export const BoxCards = (props) => {
       price: "17,95",
       status: "Online",
       avatar: {AvatarMartina},
-      background_photo: {BackgroundMartina}
+      background_image: {BackgroundMartina}
     },
     {
       name: "Paolo Ricardo",
@@ -48,7 +48,7 @@ export const BoxCards = (props) => {
       price: "5.00",
       status: "Online",
       avatar: {AvatarPaolo},
-      background_photo: {BackgroundPaolo}
+      background_image: {BackgroundPaolo}
     },
     {
       name: "Lorenzo Dimarco",
@@ -58,7 +58,7 @@ export const BoxCards = (props) => {
       price: "5.00",
       status: "Online",
       avatar: {AvatarLorenzo},
-      background_photo: {BackgroundLorenzo}
+      background_image: {BackgroundLorenzo}
     },
     {
       name: "Marvin McKinney",
@@ -68,7 +68,7 @@ export const BoxCards = (props) => {
       price: "5.00",
       status: "Online",
       avatar: {AvatarMarvin},
-      background_photo: {BackgroundMarvin}
+      background_image: {BackgroundMarvin}
     },
     {
       name: "Guy Hawkins",
@@ -78,7 +78,7 @@ export const BoxCards = (props) => {
       price: "5.00",
       status: "Online",
       avatar: {AvatarGuy},
-      background_photo: {BackgroundGuy}
+      background_image: {BackgroundGuy}
     },
     {
       name: "Luca Giusepe",
@@ -88,7 +88,7 @@ export const BoxCards = (props) => {
       price: "5,00",
       status: "Online",
       avatar: {AvatarLuca},
-      background_photo: {BackgroundLuca}
+      background_image: {BackgroundLuca}
     },
     {
       name: "Martina Wilson",
@@ -98,7 +98,7 @@ export const BoxCards = (props) => {
       price: "17,95",
       status: "Online",
       avatar: {AvatarMartina},
-      background_photo: {BackgroundMartina}
+      background_image: {BackgroundMartina}
     },
     {
       name: "Paolo Ricardo",
@@ -108,7 +108,7 @@ export const BoxCards = (props) => {
       price: "5.00",
       status: "Online",
       avatar: {AvatarPaolo},
-      background_photo: {BackgroundPaolo}
+      background_image: {BackgroundPaolo}
     },
     {
       name: "Lorenzo Dimarco",
@@ -118,7 +118,7 @@ export const BoxCards = (props) => {
       price: "5.00",
       status: "Online",
       avatar: {AvatarLorenzo},
-      background_photo: {BackgroundLorenzo}
+      background_image: {BackgroundLorenzo}
     },
     {
       name: "Marvin McKinney",
@@ -128,7 +128,7 @@ export const BoxCards = (props) => {
       price: "5.00",
       status: "Online",
       avatar: {AvatarMarvin},
-      background_photo: {BackgroundMarvin}
+      background_image: {BackgroundMarvin}
     },
     {
       name: "Guy Hawkins",
@@ -138,7 +138,7 @@ export const BoxCards = (props) => {
       price: "5.00",
       status: "Online",
       avatar: {AvatarGuy},
-      background_photo: {BackgroundGuy}
+      background_image: {BackgroundGuy}
     }
   ]
 
@@ -174,7 +174,7 @@ export const BoxCards = (props) => {
             gap-3
           "
         >
-        {teachers && teachers.slice(0, next)?.map((teacher, index) => <TeacherCard key={index} teacher={teacher}/>)}
+        {teachers && teachers.slice(0, next)?.map((teacher, index) => <TeacherCard key={index} teacher={teacher} background={teacher.background_image}/>)}
 
         {next < teachers?.length && (
           <button
