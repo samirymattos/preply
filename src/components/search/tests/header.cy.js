@@ -1,4 +1,4 @@
-import { HeaderSearch } from './header';
+import { HeaderSearch } from '../header';
 
 describe('<HeaderSearch />', () => {
   beforeEach(() => {

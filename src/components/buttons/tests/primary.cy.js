@@ -1,4 +1,4 @@
-import { PrimaryButton } from "./primary";
+import { PrimaryButton } from "../primary";
 
 describe('<PrimaryButton />', () => {
   it('mount', () => {

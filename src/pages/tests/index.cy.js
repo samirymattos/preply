@@ -1,4 +1,4 @@
-import { HomePage } from './';
+import { HomePage } from '../home';
 
 describe('<HomePage />', () => {
   beforeEach(() => {

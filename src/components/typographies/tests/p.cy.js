@@ -1,4 +1,4 @@
-import { P } from './p';
+import { P } from '../p';
 
 describe('<P />', () => {
   it('mount', () => {

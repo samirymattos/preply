@@ -1,4 +1,4 @@
-import { RatingsSpan } from './ratings';
+import { RatingsSpan } from '../ratings';
 
 describe('<RatingsSpan />', () => {
   beforeEach(() => {

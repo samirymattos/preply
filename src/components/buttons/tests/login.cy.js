@@ -1,4 +1,4 @@
-import { LoginButton } from "./login";
+import { LoginButton } from "../login";
 
 describe('<LoginButton />', () => {
   it('mount', () => {

@@ -1,4 +1,4 @@
-import { OnlineEnglishBanner } from "./online-english";
+import { OnlineEnglishBanner } from "../online-english";
 
 describe('<OnlineEnglishBanner>', () => {
   beforeEach(() => {

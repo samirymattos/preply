@@ -1,5 +1,5 @@
 import React from "react";
-import { SelectHeaderButton } from "./select-header";
+import { SelectHeaderButton } from "../select-header";
 
 describe('<SelectHeaderButton />', () => {
   it('mount and select options', () => {

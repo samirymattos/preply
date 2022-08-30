@@ -1,5 +1,5 @@
-import * as image from "../../assets";
-import { HeaderButton } from "./header";
+import * as image from "../../../assets";
+import { HeaderButton } from "../header";
 
 describe('<HeaderButton />', () => {
   it('mount', () => {

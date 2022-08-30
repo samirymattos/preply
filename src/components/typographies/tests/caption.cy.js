@@ -1,4 +1,4 @@
-import { Caption } from './caption';
+import { Caption } from '../caption';
 
 describe('<Caption />', () => {
   it('mount', () => {

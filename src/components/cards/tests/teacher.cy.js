@@ -1,4 +1,4 @@
-import { TeacherCard } from './teacher';
+import { TeacherCard } from '../teacher';
 import * as image from "../../assets";
 
 describe('<TeacherCard />', () => {

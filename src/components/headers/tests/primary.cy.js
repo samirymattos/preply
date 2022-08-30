@@ -1,4 +1,4 @@
-import { PrimaryHeader } from './primary';
+import { PrimaryHeader } from '../primary';
 
 describe('<PrimaryHeader />', () => {
   beforeEach(() => {

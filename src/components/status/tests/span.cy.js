@@ -1,4 +1,4 @@
-import { Span } from './span';
+import { Span } from '../span';
 
 describe('<Span />', () => {
   it('mount', () => {

@@ -1,4 +1,4 @@
-import { LoadMoreButton } from "./load-more";
+import { LoadMoreButton } from "../load-more";
 
 describe('<LoadMoreButton />', () => {
   it('checking click operation', () => {

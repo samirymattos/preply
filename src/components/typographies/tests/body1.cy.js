@@ -1,4 +1,4 @@
-import { Body1 } from './body1';
+import { Body1 } from '../body1';
 
 describe('<Body1 />', () => {
   it('mount', () => {

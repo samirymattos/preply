@@ -1,4 +1,4 @@
-import { TeacherCardBox } from "./teachers";
+import { TeacherCardBox } from "../teachers";
 
 describe('<TeacherCardBox />', () => {
   beforeEach(() => {
