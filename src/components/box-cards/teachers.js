@@ -1,19 +1,6 @@
 import React, { useState } from "react";
 import { TeacherCard } from "../cards";
-import {
-  AvatarGuy,
-  AvatarLorenzo,
-  AvatarLuca,
-  AvatarMartina,
-  AvatarMarvin,
-  AvatarPaolo,
-  BackgroundGuy,
-  BackgroundLorenzo,
-  BackgroundLuca,
-  BackgroundMartina,
-  BackgroundMarvin,
-  BackgroundPaolo
-} from "../../assets";
+import * as image from "../../assets";
 import * as button from "../buttons";
 
 
@@ -27,8 +14,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5,00",
       status: "Online",
-      avatar: `${AvatarLuca}`,
-      background_image: `${BackgroundLuca}`,
+      avatar: `${image.AvatarLuca}`,
+      background_image: `${image.BackgroundLuca}`,
       has_verified: true
     },
     {
@@ -38,8 +25,8 @@ export const TeacherCardBox = (props) => {
       reviews: "24",
       price: "17,95",
       status: "Online",
-      avatar: `${AvatarMartina}`,
-      background_image: `${BackgroundMartina}`,
+      avatar: `${image.AvatarMartina}`,
+      background_image: `${image.BackgroundMartina}`,
       has_verified: true
     },
     {
@@ -49,8 +36,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5.00",
       status: "Online",
-      avatar: `${AvatarPaolo}`,
-      background_image: `${BackgroundPaolo}`,
+      avatar: `${image.AvatarPaolo}`,
+      background_image: `${image.BackgroundPaolo}`,
       has_verified: true
     },
     {
@@ -60,8 +47,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5.00",
       status: "Online",
-      avatar: `${AvatarLorenzo}`,
-      background_image: `${BackgroundLorenzo}`,
+      avatar: `${image.AvatarLorenzo}`,
+      background_image: `${image.BackgroundLorenzo}`,
       has_verified: true
     },
     {
@@ -71,8 +58,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5.00",
       status: "Online",
-      avatar: `${AvatarMarvin}`,
-      background_image: `${BackgroundMarvin}`,
+      avatar: `${image.AvatarMarvin}`,
+      background_image: `${image.BackgroundMarvin}`,
       has_verified: true
     },
     {
@@ -82,8 +69,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5.00",
       status: "Online",
-      avatar: `${AvatarGuy}`,
-      background_image: `${BackgroundGuy}`,
+      avatar: `${image.AvatarGuy}`,
+      background_image: `${image.BackgroundGuy}`,
       has_verified: true
     },
     {
@@ -93,8 +80,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5,00",
       status: "Online",
-      avatar: `${AvatarLuca}`,
-      background_image: `${BackgroundLuca}`,
+      avatar: `${image.AvatarLuca}`,
+      background_image: `${image.BackgroundLuca}`,
       has_verified: true
     },
     {
@@ -104,8 +91,8 @@ export const TeacherCardBox = (props) => {
       reviews: "24",
       price: "17,95",
       status: "Online",
-      avatar: `${AvatarMartina}`,
-      background_image: `${BackgroundMartina}`,
+      avatar: `${image.AvatarMartina}`,
+      background_image: `${image.BackgroundMartina}`,
       has_verified: true
     },
     {
@@ -115,8 +102,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5.00",
       status: "Online",
-      avatar: `${AvatarPaolo}`,
-      background_image: `${BackgroundPaolo}`,
+      avatar: `${image.AvatarPaolo}`,
+      background_image: `${image.BackgroundPaolo}`,
       has_verified: true
     },
     {
@@ -126,8 +113,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5.00",
       status: "Online",
-      avatar: `${AvatarLorenzo}`,
-      background_image: `${BackgroundLorenzo}`,
+      avatar: `${image.AvatarLorenzo}`,
+      background_image: `${image.BackgroundLorenzo}`,
       has_verified: true
     },
     {
@@ -137,8 +124,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5.00",
       status: "Online",
-      avatar: `${AvatarMarvin}`,
-      background_image: `${BackgroundMarvin}`,
+      avatar: `${image.AvatarMarvin}`,
+      background_image: `${image.BackgroundMarvin}`,
       has_verified: true
     },
     {
@@ -148,8 +135,8 @@ export const TeacherCardBox = (props) => {
       reviews: "6",
       price: "5.00",
       status: "Online",
-      avatar: `${AvatarGuy}`,
-      background_image: `${BackgroundGuy}`,
+      avatar: `${image.AvatarGuy}`,
+      background_image: `${image.BackgroundGuy}`,
       has_verified: true
     }
   ]
@@ -173,6 +160,7 @@ export const TeacherCardBox = (props) => {
       "
     >
       <div 
+        id="card-box"
         className="
           -z-10
           mx-auto 
@@ -199,7 +187,7 @@ export const TeacherCardBox = (props) => {
       {next < teachers?.length && (
         <div className="h-[130px]">
           <div className="flex justify-center w-full max-w-full mx-auto pt-20 shadow-load-more mb-20 absolute bottom-0 left-0 z-20">
-            <button.LoadMoreButton onClick={handleMoreImage}/>
+            <button.LoadMoreButton  onClick={handleMoreImage}/>
           </div>
         </div>
       )}

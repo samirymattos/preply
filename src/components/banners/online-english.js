@@ -1,10 +1,12 @@
 import React from "react";
 import { ManInEnglishBannerOnline } from "../../assets";
+import { Span } from "../status";
 import * as typographie from "../typographies";
 
 export const OnlineEnglishBanner = () => {
   return (
       <div 
+        id="online-english-banner"
         className="
           px-2 
           pt-8
@@ -46,9 +48,9 @@ export const OnlineEnglishBanner = () => {
           >
             <typographie.H1>
               Online {''}
-              <typographie.Span>
+              <Span>
                 English
-              </typographie.Span> 
+              </Span> 
               {''} tutors & teachers for private lessons
             </typographie.H1>
             <typographie.H4>

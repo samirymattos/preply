@@ -4,7 +4,9 @@ export const LoadMoreButton = (props) => {
   return (
     <button
       {...props}
+      id="load-more-button"
       className="
+        load-more-button
         min-w-[400px]
         max-w-full
         sm:min-w-full

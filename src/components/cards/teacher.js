@@ -1,6 +1,6 @@
 import React from "react";
 import { StarIcon, VerifyIcon } from "../../assets";
-import { RatingsSpan } from "../spans";
+import { RatingsSpan, Status } from "../status";
 import * as typographies from "../typographies";
 import * as button from "../buttons";
 
@@ -9,6 +9,7 @@ export const TeacherCard = ({teacher}) => {
     <div className="z-10">
       <div 
         className="
+          card
           h-[370px]
           relative 
           rounded-t-3xl
@@ -33,9 +34,9 @@ export const TeacherCard = ({teacher}) => {
           "
         >
           <div className="py-8 px-6 overflow-hidden">
-            <typographies.Status>
+            <Status>
               {teacher.status} 
-            </typographies.Status>
+            </Status>
           </div>
         </div>
 

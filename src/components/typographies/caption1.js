@@ -6,6 +6,7 @@ export const Caption1 = (props) => {
       className="
         text-neutrals03
         text-min-caption
+        text-left
       "
     >
       {props.children}
